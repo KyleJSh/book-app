@@ -18,12 +18,18 @@ struct Staging: View {
         
         VStack (spacing: 20) {
             
-            Text("Read Now!")
+            NavigationLink(destination: PagesView(book: book)) {
+                
+                VStack {
+                    Text("Read Now!")
+                    
+                    Image("cover\(book.id)")
+                        .resizable()
+                        .scaledToFit()
+                        .padding(.horizontal, 50)
+                }
+            }
             
-            Image("cover\(book.id)")
-                .resizable()
-                .scaledToFit()
-                .padding(.horizontal, 50)
             
             Spacer()
             
@@ -33,7 +39,7 @@ struct Staging: View {
             Button(action: { model.updateFavourite(forId: book.id) },
                    label: {
                     Image(systemName: book.isFavourite ? "star.fill" : "star")
-            })
+                   })
                 .accentColor(.yellow)
             
             Spacer()

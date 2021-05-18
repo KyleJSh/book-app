@@ -16,6 +16,7 @@
 		C87C0B092654470A00035560 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87C0B082654470A00035560 /* ViewModel.swift */; };
 		C88DB43F26544EE90037AAEE /* BookCoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88DB43E26544EE90037AAEE /* BookCoverView.swift */; };
 		C88DB442265457420037AAEE /* Staging.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88DB441265457420037AAEE /* Staging.swift */; };
+		C8F86BE026547AD600339C46 /* PagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F86BDF26547AD600339C46 /* PagesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		C87C0B082654470A00035560 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		C88DB43E26544EE90037AAEE /* BookCoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCoverView.swift; sourceTree = "<group>"; };
 		C88DB441265457420037AAEE /* Staging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Staging.swift; sourceTree = "<group>"; };
+		C8F86BDF26547AD600339C46 /* PagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				C88DB43E26544EE90037AAEE /* BookCoverView.swift */,
 				C85138F026535A4C00A6EDD8 /* LibraryView.swift */,
 				C88DB441265457420037AAEE /* Staging.swift */,
+				C8F86BDF26547AD600339C46 /* PagesView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 				C85138EF26535A4C00A6EDD8 /* book_appApp.swift in Sources */,
 				C87C0B092654470A00035560 /* ViewModel.swift in Sources */,
 				C88DB43F26544EE90037AAEE /* BookCoverView.swift in Sources */,
+				C8F86BE026547AD600339C46 /* PagesView.swift in Sources */,
 				C851390926535ADA00A6EDD8 /* Book.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
