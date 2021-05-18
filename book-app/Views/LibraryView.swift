@@ -12,16 +12,21 @@ struct LibraryView: View {
     @EnvironmentObject var model:ViewModel
     
     var body: some View {
-        
-        ScrollView {
-            LazyVStack {
-                ForEach (model.books) { index in
-                    
-                   Text("hello world")
-                    
+        NavigationView {
+            ScrollView {
+                LazyVStack {
+                    ForEach (model.books) { book in
+                        NavigationLink(destination: Staging(book: book)) {
+                            BookCoverView(book: book)
+                        }
+                     
+                    }
                 }
+                .padding(.top)
             }
+            .navigationTitle("My Library")
         }
+        
     }
 }
 

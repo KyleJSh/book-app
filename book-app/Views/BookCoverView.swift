@@ -14,7 +14,6 @@ struct BookCoverView: View {
     var body: some View {
         
         ZStack {
-            
             Rectangle()
                 .foregroundColor(.white)
                 .cornerRadius(10)
@@ -25,7 +24,7 @@ struct BookCoverView: View {
                 HStack {
                     Text(book.title)
                         .bold()
-                        .font(.largeTitle)
+                        .font(.title)
                     
                     Spacer()
                     
@@ -42,6 +41,7 @@ struct BookCoverView: View {
                 
                 Image("cover\(book.id)")
                     .resizable()
+                    .scaledToFit()
                 
                 
             }

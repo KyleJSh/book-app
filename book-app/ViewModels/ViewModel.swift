@@ -15,7 +15,7 @@ class ViewModel: ObservableObject {
         self.books = getLocalData()
     }
     
-    /// retrieve all record data from a local JSON file with names 'fileName' and extension 'fileExtension'
+    /// retrieve all record data from a local JSON file with names `fileName` and extension `fileExtension`
     func getLocalData(fileName: String = "Data", fileExtension: String = "json") -> [Book] {
         
         var books = [Book]()
@@ -37,4 +37,25 @@ class ViewModel: ObservableObject {
         }
         return books
     }
+    
+    func updateFavourite(forId: Int) {
+        
+        if let index = books.firstIndex(where: { $0.id == forId }) {
+            books[index].isFavourite.toggle()
+        }
+    }
+    
+    func updateRating(forId: Int, rating:Int) {
+        
+        if let index = books.firstIndex(where: { $0.id == forId }) {
+            books[index].rating = rating
+        }
+    }
+    
+    func updatePage(forId: Int, page: Int) {
+        if let index = books.firstIndex(where: { $0.id == forId }) {
+            books[index].currentPage = page
+        }
+    }
+    
 }
