@@ -9,8 +9,8 @@ import Foundation
 
 struct Book:Identifiable, Decodable {
     
-    var title = "title"
-    var author = "author"
+    var title = "Title"
+    var author = "Author"
     var isFavourite = false
     var currentPage = 0
     var rating = 2
